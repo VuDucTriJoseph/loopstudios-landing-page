@@ -1,0 +1,23 @@
+$font-primary: "Alata", sans-serif;
+$font-secondary: "Josefin Sans", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10/16 = 62.5%
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  //   color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
