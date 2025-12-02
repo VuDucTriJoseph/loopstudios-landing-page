@@ -34,4 +34,31 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
+}
+
+.hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  width: 144rem;
+  height: 65rem;
+  padding: 6.4rem 0;
+  display: flex;
+  justify-content: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8.4rem;
+    justify-content: space-between;
+    width: 110rem;
+  }
+  &__title {
+    max-width: 65rem;
+    height: 27.8rem;
+    padding: 4rem 4.2rem;
+
+    text-transform: uppercase;
+
+    border: 1px solid $color-white;
+  }
 }
