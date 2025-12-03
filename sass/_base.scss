@@ -27,14 +27,14 @@ body {
   font-family: $font-primary;
   font-size: 1.5rem;
   //   color: $color-grey-dark-2;
-  color: $color-white;
-  background-color: $color-black;
+
+  background-color: $color-white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 17.5rem;
 }
 
 .hero {
@@ -56,9 +56,49 @@ body {
     max-width: 65rem;
     height: 27.8rem;
     padding: 4rem 4.2rem;
+    color: $color-white;
 
     text-transform: uppercase;
 
     border: 1px solid $color-white;
   }
+}
+.about {
+  width: 110rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  &__img {
+    grid-column: 1/5;
+    grid-row: 1/-1;
+  }
+
+  &__contents {
+    grid-column: 4/7;
+    grid-row: 3/7;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    // width: 44.5rem;
+    justify-content: end;
+    align-items: flex-end;
+    padding-left: 9.5rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__description {
+    opacity: 50%;
+  }
+}
+
+.creations {
+  width: 110rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
