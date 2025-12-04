@@ -249,6 +249,14 @@ body {
   line-height: 165%;
   font-weight: 400;
 }
+@media only screen and (max-width: 1100px) {
+  .preset-6 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+}
 
 .preset-7 {
   font-family: "Alata", sans-serif;
@@ -268,6 +276,9 @@ body {
 .header__navbar {
   align-self: flex-start;
 }
+.header__navbar summary {
+  list-style: none;
+}
 .header__navbar_btn-togal {
   display: none;
   mask: url(../images/icon-hamburger.svg) no-repeat center;
@@ -275,6 +286,9 @@ body {
   width: 3.2rem;
   height: 3.2rem;
   background-color: rgb(255, 255, 255);
+}
+.header__navbar[open] summary .header__navbar_btn-togal {
+  mask: url(../images/icon-close.svg) no-repeat center;
 }
 .header__navbar_items {
   list-style: none;
@@ -317,7 +331,7 @@ body {
     display: block;
   }
   .header__navbar_items {
-    display: none;
+    gap: 1rem;
   }
 }
 

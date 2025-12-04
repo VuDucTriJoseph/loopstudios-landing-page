@@ -7,6 +7,11 @@
 
   &__navbar {
     align-self: flex-start;
+
+    & summary {
+      list-style: none;
+    }
+
     &_btn-togal {
       display: none;
       mask: url(../images/icon-hamburger.svg) no-repeat center;
@@ -14,6 +19,10 @@
       width: 3.2rem;
       height: 3.2rem;
       background-color: $color-white;
+    }
+
+    &[open] summary &_btn-togal {
+      mask: url(../images/icon-close.svg) no-repeat center;
     }
 
     &_items {
@@ -78,7 +87,8 @@
       }
 
       &_items {
-        display: none;
+        // display: none;
+        gap: 1rem;
       }
     }
   }
